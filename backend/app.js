@@ -20,9 +20,6 @@ app.use(cors({credentials: true, origin: "http://localhost:5000"}))
 // upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")))
 
-// db connection
-
-
 // routes
 app.use(router)
 
